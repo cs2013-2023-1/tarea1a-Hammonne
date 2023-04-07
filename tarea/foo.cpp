@@ -104,7 +104,7 @@ Matriz2D operator+(const Matriz2D& m1, const Matriz2D& m2){
         Matriz2D resultado(m1.filas, m1.columnas);
         for (int i = 0; i < m1.filas; i++)
             for (int j = 0; j < m1.columnas; j++)
-                resultado.ptr[i][j] = m1.ptr[j][i] + m2.ptr[i][j];
+                resultado.ptr[i][j] = m1.ptr[i][j] + m2.ptr[i][j];
         return resultado;
     }
 }
@@ -117,7 +117,7 @@ Matriz2D operator-(const Matriz2D& m1, const Matriz2D& m2){
         Matriz2D resultado(m1.filas, m1.columnas);
         for (int i = 0; i < m1.filas; i++)
             for (int j = 0; j < m1.columnas; j++)
-                resultado.ptr[i][j] = m1.ptr[j][i] - m2.ptr[i][j];
+                resultado.ptr[i][j] = m1.ptr[i][j] - m2.ptr[i][j];
         return resultado;
     }
 }
